@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-export const Score = () => {
-  const [score, setScore] = useState(0);
+export const Score = (props) => {
+  // const [score, setScore] = useState(0);
 
-  return <div>{score}</div>;
+  return <div>{props.score}</div>;
 };

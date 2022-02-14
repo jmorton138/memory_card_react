@@ -11,7 +11,6 @@ export const Card = (props) => {
 
   return (
     <div
-      className="card"
       onClick={(e) => {
         handleClick(e);
       }}

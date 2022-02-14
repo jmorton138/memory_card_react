@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Card } from "./Card";
 
-export const CardDeck = () => {
+export const CardDeck = (props) => {
   //initialize deck
   const [deck, setDeck] = useState([1, 2, 3, 4]);
 
@@ -9,7 +9,6 @@ export const CardDeck = () => {
     e.preventDefault();
     let shuffled = shuffle(deck);
     setDeck([...shuffled]);
-    console.log(deck);
   };
 
   //Fisher-Yates shuffle algorythm
@@ -31,7 +30,13 @@ export const CardDeck = () => {
 
   return deck.map((card) => {
     return (
-      <div onClick={(e) => shuffleDeck(e)}>
+      <div
+        onClick={(e) => {
+          shuffleDeck(e);
+          props.updateScore();
+        }}
+        className="card"
+      >
         <Card num={card} key={card} />
       </div>
     );
