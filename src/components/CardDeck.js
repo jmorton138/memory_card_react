@@ -30,14 +30,14 @@ export const CardDeck = (props) => {
 
   return deck.map((card) => {
     return (
-      <div
-        onClick={(e) => {
-          shuffleDeck(e);
-          props.updateScore();
-        }}
-        className="card"
-      >
-        <Card num={card} key={card} />
+      <div>
+        <Card
+          num={card}
+          key={card}
+          updateScore={props.updateScore}
+          addToClicked={props.addToClicked}
+          shuffleDeck={shuffleDeck}
+        />
       </div>
     );
   });
