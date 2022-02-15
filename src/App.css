@@ -51,6 +51,7 @@ header {
   margin-right: 17%;
   padding-bottom: 50px;
 }
+
 .card {
   border: 1px solid blue;
   display: grid;
@@ -82,4 +83,35 @@ header {
 .score,
 .best-score {
   text-align: right;
+}
+@media (max-width: 1000px) {
+  .card-deck {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .card-deck {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  header {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 405px) {
+  .card-deck {
+    grid-template-columns: 1fr;
+  }
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .scores {
+    position: static;
+    margin-bottom: 20px;
+    padding: 2px;
+  }
 }
