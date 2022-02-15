@@ -32,9 +32,22 @@ function App() {
 
   return (
     <div className="App">
-      Score: <Score score={score} />
-      Best Score: <BestScore bestScore={bestScore} />
-      <CardDeck updateScore={updateScore} addToClicked={addToClicked} />
+      <header>
+        <h1>Learn Chinese Memory Game</h1>
+      </header>
+
+      <div className="scores">
+        <div className="score-container">
+          <div>Score:</div> <Score score={score} />
+        </div>
+        <div className="best-score-container">
+          <div>Best Score:</div> <BestScore bestScore={bestScore} />
+        </div>
+      </div>
+
+      <div className="card-deck">
+        <CardDeck updateScore={updateScore} addToClicked={addToClicked} />
+      </div>
     </div>
   );
 }

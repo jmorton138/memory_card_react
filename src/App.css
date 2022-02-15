@@ -1,9 +1,6 @@
 .App {
   text-align: center;
-}
-
-* {
-  border: 1px solid red;
+  background-color: beige;
 }
 
 .App-logo {
@@ -41,8 +38,48 @@
   }
 }
 
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card-deck {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-left: 17%;
+  margin-right: 17%;
+  padding-bottom: 50px;
+}
 .card {
-  width: 100px;
-  height: 100px;
   border: 1px solid blue;
+  display: grid;
+  padding: 20px;
+  grid-gap: 10px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: aliceblue;
+}
+
+.card:hover {
+  background-color: lightblue;
+}
+.hanzi {
+  font-size: 50px;
+  padding: 10px;
+}
+.scores {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.score-container,
+.best-score-container {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+.score,
+.best-score {
+  text-align: right;
 }

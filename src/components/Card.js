@@ -12,9 +12,9 @@ export const Card = (props) => {
 
   return (
     <div onClick={(e) => handleClick(e)} className="card">
-      <div>{props.hanyu}</div>
-      <div>{props.pinyin}</div>
-      <div>{props.translation}</div>
+      <div className="hanzi">{props.hanyu}</div>
+      <div className="pinyin">{props.pinyin}</div>
+      <div className="translation">{props.translation}</div>
     </div>
   );
 };

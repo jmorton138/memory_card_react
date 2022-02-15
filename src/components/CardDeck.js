@@ -3,7 +3,7 @@ import { Card } from "./Card";
 
 export const CardDeck = (props) => {
   //initialize deck
-  const [deck, setDeck] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  const [deck, setDeck] = useState([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
   const characterArray = [
     "我",
     "你",
@@ -15,6 +15,8 @@ export const CardDeck = (props) => {
     "东西",
     "吃",
     "请",
+    "给",
+    "哪里",
   ];
   const pinyinArray = [
     "Wǒ",
@@ -27,6 +29,8 @@ export const CardDeck = (props) => {
     "Dōngxī",
     "Chī",
     "Qǐng",
+    "Gěi",
+    "Nǎlǐ",
   ];
   const translationArray = [
     "I",
@@ -39,6 +43,8 @@ export const CardDeck = (props) => {
     "Thing",
     "Eat",
     "Please",
+    "Give",
+    "Where",
   ];
 
   const shuffleDeck = (e) => {

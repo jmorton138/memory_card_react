@@ -1,5 +1,5 @@
 import React from "react";
 
 export const BestScore = (props) => {
-  return <div>{props.bestScore}</div>;
+  return <div className="best-score">{props.bestScore}</div>;
 };
