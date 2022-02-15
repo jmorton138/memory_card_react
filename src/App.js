@@ -28,6 +28,10 @@ function App() {
     if (score > bestScore) {
       setBestScore(score);
     }
+
+    if (score === 12) {
+      alert("You've won! You memorized all 12 cards");
+    }
   }, [score]);
 
   return (
