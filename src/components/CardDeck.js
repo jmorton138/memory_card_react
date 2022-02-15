@@ -11,6 +11,11 @@ export const CardDeck = (props) => {
     setDeck([...shuffled]);
   };
 
+  useEffect(() => {
+    console.log(props);
+    const newGame = () => {};
+  });
+
   //Fisher-Yates shuffle algorythm
   function shuffle(array) {
     let currentIndex = array.length,
