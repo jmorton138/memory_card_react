@@ -84,9 +84,27 @@ header {
 .best-score {
   text-align: right;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .card-deck {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 890px) {
+  .App {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .scores {
+    position: static;
+    margin-bottom: 20px;
+    padding: 2px;
+    width: 180px;
+    justify-self: center;
+  }
+  header {
+    margin: 0;
   }
 }
 
