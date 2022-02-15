@@ -20,15 +20,15 @@ function App() {
     }
   };
 
-  // useEffect(() => {
-  //   if (score > bestScore) {
-  //     setBestScore(score);
-  //   }
-  // }, [score]);
-
   const addToClicked = (id) => {
     setClickedCards([...clickedCards, id]);
   };
+
+  useEffect(() => {
+    if (score > bestScore) {
+      setBestScore(score);
+    }
+  }, [score]);
 
   return (
     <div className="App">
